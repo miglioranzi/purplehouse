@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PurpleHouse | Seu Refúgio em Saquarema</title>
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+               
+                
+                <a href="#" class="logo">PurpleHouse<span>Saquarema</span></a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#calendar">Disponibilidade</a></li>
+                    <li><a href="#payment">Pagamento</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>A Casa Perfeita para seus Momentos</h1>
+            <p>Conforto, praticidade e a melhor localização para sua temporada. <br>Reserve agora e garanta momentos inesquecíveis.</p>
+            <a href="#calendar" class="btn btn-large">Ver Disponibilidade</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container">
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Casa Estruturada</h3>
+                <p>Estrutura e equipamentos para garantir sua experiência perfeita.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Reserva Fácil</h3>
+                <p>Processo de reserva simplificado com calendário de disponibilidade em tempo real.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Pagamento Seguro</h3>
+                <p>Transações 100% seguras com diversas opções de pagamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery container" id="gallery">
+        <h2 class="section-title">Galeria de Fotos</h2>
+        <div class="gallery-grid">
+             <div class="gallery-item">
+                <img src="imagens/vista.JPG" alt="Vista">
+            </div>
+             <div class="gallery-item">
+                <img src="imagens/frente.JPG" alt="Fachada">
+            </div>
+             <div class="gallery-item">
+                <img src="imagens/sl3.JPG" alt="Sala de estar">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/piscinanoite.jpg" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/fundos.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/ap.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/f2.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens//as.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/f3.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/f4.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/f5.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/gg.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/gg.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/q1.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/q2.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/sf.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/sf2.JPG" alt="Piscina">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/v2.JPG" alt="Piscina">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Calendar -->
+    <section class="calendar-section container" id="calendar">
+        <div class="calendar-header">
+            <h2 class="section-title" style="margin-bottom: 0;">Disponibilidade para Reserva</h2>
+            <button class="btn" id="bookingBtn">Fazer Reserva</button>
+        </div>
+        <p class="text-center" style="margin-bottom: 2rem; text-align: center;">Verifique as datas disponíveis para a próxima temporada</p>
+        
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sáb</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+                <!-- Calendar will be generated by JavaScript -->
+            </tbody>
+        </table>
+        
+        <div style="margin-top: 1.5rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center;">
+                <div style="width: 20px; height: 20px; background-color: #e8f5e9; margin-right: 10px; border: 1px solid #ddd;"></div>
+                <span>Disponível</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div style="width: 20px; height: 20px; background-color: #ffebee; margin-right: 10px; border: 1px solid #ddd;"></div>
+                <span>Reservado</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div style="width: 20px; height: 20px; background-color: #e3f2fd; margin-right: 10px; border: 2px solid var(--primary-color);"></div>
+                <span>Hoje</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="payment-section container" id="payment">
+        <h2 class="section-title">Formas de Pagamento</h2>
+        <p class="text-center" style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Oferecemos várias opções de pagamento seguro para sua conveniência</p>
+        
+        <div class="payment-options">
+            <div class="payment-option">
+                <div class="payment-icon">
+                    <i class="fab fa-cc-visa"></i>
+                </div>
+                <h3>Cartão de Crédito</h3>
+                <p>Pague com seu cartão de crédito em até 12x sem juros.</p>
+            </div>
+            <div class="payment-option">
+                <div class="payment-icon">
+                    <i class="fas fa-barcode"></i>
+                </div>
+                <h3>Boleto Bancário</h3>
+                <p>Pague com boleto bancário com até 10% de desconto.</p>
+            </div>
+            <div class="payment-option">
+                <div class="payment-icon">
+                    <i class="fab fa-pix"></i>
+                </div>
+                <h3>PIX</h3>
+                <p>Pagamento instantâneo com 5% de desconto.</p>
+            </div>
+            <div class="payment-option">
+                <div class="payment-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>Transferência</h3>
+                <p>Transferência bancária com 8% de desconto.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <button class="btn btn-large btn-secondary" id="paymentBtn">Realizar Pagamento</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">PurpleHouse<span>Saquarema</span></div>
+                    <p style="margin-top: 1rem; max-width: 300px;">A casa perfeita para suas férias com conforto e segurança.</p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Contato</h4>
+                    <p><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> (21) 97485-6669</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> purplehousesaquarema@gmail.com</p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 PurpleHouse. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Reservar Casa</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="checkin">Data de Check-in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Data de Check-out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Número de Hóspedes</label>
+                    <select id="guests" required>
+                        <option value="">Selecione</option>
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoas</option>
+                        <option value="3">3 pessoas</option>
+                        <option value="4">4 pessoas</option>
+                        <option value="5">5 pessoas</option>
+                        <option value="6">6 pessoas ou mais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Realizar Pagamento</h3>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="paymentMethod">Forma de Pagamento</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Selecione</option>
+                        <option value="credit">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                        <option value="transfer">Transferência Bancária</option>
+                    </select>
+                </div>
+                <div id="creditCardFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="cardNumber">Número do Cartão</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardName">Nome no Cartão</label>
+                        <input type="text" id="cardName" placeholder="Nome como está no cartão">
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="cardExpiry">Validade (MM/AA)</label>
+                            <input type="text" id="cardExpiry" placeholder="MM/AA">
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="cardCvv">CVV</label>
+                            <input type="text" id="cardCvv" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <div id="pixFields" style="display: none; text-align: center;">
+                    <p>Use o QR Code abaixo para pagar via PIX</p>
+                    <div style="background-color: #f5f5f5; padding: 1rem; border-radius: var(--border-radius); display: inline-block; margin: 1rem 0;">
+                        <!-- QR Code placeholder -->
+                        <div style="width: 150px; height: 150px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">
+                            <span>QR Code PIX</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem;">Ou use a chave PIX: contato@casatemporada.com</p>
+                </div>
+                <div id="otherFields" style="display: none;">
+                    <p>Após confirmar sua reserva, enviaremos as instruções de pagamento para o e-mail cadastrado.</p>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Finalizar Pagamento</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Generate calendar
+        function generateCalendar() {
+            const calendarBody = document.getElementById('calendarBody');
+            const today = new Date();
+            const currentMonth = today.getMonth();
+            const currentYear = today.getFullYear();
+            
+            // Get first day of month
+            const firstDay = new Date(currentYear, currentMonth, 1);
+            // Get last day of month
+            const lastDay = new Date(currentYear, currentMonth + 1, 0);
+            // Get number of days in month
+            const daysInMonth = lastDay.getDate();
+            
+            // Determine what day of the week the first day is (0 = Sunday, 1 = Monday, etc.)
+            let firstDayIndex = firstDay.getDay();
+            
+            // Create array of booked dates (for demo purposes)
+            const bookedDates = [5, 6, 7, 12, 13, 19, 20, 26, 27];
+            
+            let calendarHTML = '';
+            let dayCounter = 1;
+            
+            // Create 6 weeks (6 rows)
+            for (let i = 0; i < 6; i++) {
+                calendarHTML += '<tr>';
+                
+                // Create 7 days per week (7 columns)
+                for (let j = 0; j < 7; j++) {
+                    if (i === 0 && j < firstDayIndex) {
+                        // Empty cells before the first day of the month
+                        calendarHTML += '<td></td>';
+                    } else if (dayCounter > daysInMonth) {
+                        // Empty cells after the last day of the month
+                        calendarHTML += '<td></td>';
+                    } else {
+                        // Regular day cell
+                        const isBooked = bookedDates.includes(dayCounter);
+                        const isToday = dayCounter === today.getDate() && currentMonth === today.getMonth();
+                        
+                        let cellClass = '';
+                        if (isToday) cellClass += 'today ';
+                        if (isBooked) cellClass += 'booked';
+                        else cellClass += 'available';
+                        
+                        calendarHTML += `<td class="${cellClass}">
+                            <span class="day-number">${dayCounter}</span>
+                            ${isBooked ? '<small>Reservado</small>' : '<small>Disponível</small>'}
+                        </td>`;
+                        
+                        dayCounter++;
+                    }
+                }
+                
+                calendarHTML += '</tr>';
+                
+                // Stop creating rows if we've reached the end of the month
+                if (dayCounter > daysInMonth) break;
+            }
+            
+            calendarBody.innerHTML = calendarHTML;
+        }
+        
+        // Initialize calendar
+        generateCalendar();
+        
+        // Modal functionality
+        const bookingBtn = document.getElementById('bookingBtn');
+        const paymentBtn = document.getElementById('paymentBtn');
+        const bookingModal = document.getElementById('bookingModal');
+        const paymentModal = document.getElementById('paymentModal');
+        const closeModals = document.querySelectorAll('.close-modal');
+        
+        // Show booking modal
+        bookingBtn.addEventListener('click', () => {
+            bookingModal.style.display = 'flex';
+        });
+        
+        // Show payment modal
+        paymentBtn.addEventListener('click', () => {
+            paymentModal.style.display = 'flex';
+        });
+        
+        // Close modals when clicking X
+        closeModals.forEach(closeBtn => {
+            closeBtn.addEventListener('click', () => {
+                bookingModal.style.display = 'none';
+                paymentModal.style.display = 'none';
+            });
+        });
+        
+        // Close modals when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === bookingModal) {
+                bookingModal.style.display = 'none';
+            }
+            if (e.target === paymentModal) {
+                paymentModal.style.display = 'none';
+            }
+        });
+        
+        // Handle payment method selection
+        const paymentMethod = document.getElementById('paymentMethod');
+        const creditCardFields = document.getElementById('creditCardFields');
+        const pixFields = document.getElementById('pixFields');
+        const otherFields = document.getElementById('otherFields');
+        
+        paymentMethod.addEventListener('change', () => {
+            const method = paymentMethod.value;
+            
+            // Hide all fields first
+            creditCardFields.style.display = 'none';
+            pixFields.style.display = 'none';
+            otherFields.style.display = 'none';
+            
+            // Show selected method fields
+            if (method === 'credit') {
+                creditCardFields.style.display = 'block';
+            } else if (method === 'pix') {
+                pixFields.style.display = 'block';
+            } else if (method === 'boleto' || method === 'transfer') {
+                otherFields.style.display = 'block';
+            }
+        });
+        
+        // Form submissions
+        document.getElementById('bookingForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Reserva realizada com sucesso! Em breve entraremos em contato para confirmação.');
+            bookingModal.style.display = 'none';
+        });
+        
+        document.getElementById('paymentForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Pagamento processado com sucesso! Obrigado pela sua reserva.');
+            paymentModal.style.display = 'none';
+        });
+        
+        // Set min date for check-in to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('checkin').min = today;
+        
+        // Update checkout min date when checkin changes
+        document.getElementById('checkin').addEventListener('change', function() {
+            document.getElementById('checkout').min = this.value;
+        });
+    </script>
+</body>
+</html>

@@ -1,2 +1,2 @@
-# purplehouse
-site para aluguel de casa por temporada
+# cursodnc
+Repositório para o curso DNC - Egenharia de Software
